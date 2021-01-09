@@ -1,3 +1,34 @@
+
+@font-face {
+	src: url('..fonts/OpenSans-Regular.ttf');
+	font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+@font-face {
+	src: url('..fonts/OpenSans-Italic.ttf');
+	font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+@font-face {
+    src: url('../fonts/OpenSans-SemiBold.ttf');
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+@font-face {
+    src: url('../fonts/OpenSans-Bold.ttf');
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+@font-face {
+    src: url('../fonts/OpenSans-ExtraBold.ttf');
+    font-family: 'Open Sans';
+    font-weight: 800;
+}
+
 html,body {
 	font-family: 'Open Sans',sans-serif;
 	padding: 0 1vw;
@@ -8,6 +39,7 @@ html,body {
 body {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .content {
@@ -88,7 +120,7 @@ body {
 
 .intro-image {
 	align-self: flex-end;
-	max-width: 50%
+	/*max-width: 50%*/
 }
 
 /*.intro-image img {
@@ -106,12 +138,56 @@ body {
 	font-weight: bold;
 }
 
+.services {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1249px;
+	/*padding: 102px 0 84px;*/
+}
+
+
+.feature-menu ul {
+	display: flex;	
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.feature-menu li {
+	text-align: center;
+}
+
+.feature-menu a {
+	padding: 0 25px;
+	color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-underline-position: under;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.feature-menu a:hover{
+	text-decoration-line: underline; 
+	text-decoration-color: #FF3F40;
+}
+
+
+.team-links {
+	font-size: 18px;
+	font-style: italic;
+}
+
+
 .footer {
-	flex-shrink: 0;
 	max-width: 1249px;
 	min-height: 89px;
 	background-color: #000000;
 	color: #FFFFFF;
+}
+
+.footer-wrapper {
+	width: 100%;
 }
 
 @media screen and (max-width: 900px) {
